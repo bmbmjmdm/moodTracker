@@ -1,5 +1,7 @@
 To begin, run:
+
 npm i
+
 npm run start
 
 Completed all objectives and the optional objectives for:
