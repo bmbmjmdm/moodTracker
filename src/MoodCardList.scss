@@ -1,0 +1,92 @@
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import "bootstrap/scss/mixins/_breakpoints.scss";
+
+.mood-card {
+    border-radius: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 95%;
+    width: 12rem;
+    min-width: 12rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-color: rgba(0,0,0,0);
+    border-width: 0.3rem;
+    border-style: solid;
+}
+
+@include media-breakpoint-down(sm) {
+    .mood-card {
+        width: 10rem;
+        min-width: 10rem
+    }
+}
+
+.overflow-special {
+  overflow: hidden;
+  padding-bottom: 1.05rem;
+  -webkit-mask-image: -webkit-gradient(linear, right bottom, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.overflow-special:hover {
+  overflow-x: scroll;
+  padding-bottom: 0rem;
+  -webkit-mask-image: -webkit-gradient(linear, right bottom, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+}
+
+.selected-border {
+    border-color: white !important;
+    border-width: 0.3rem !important;
+    border-style: solid !important;
+}
+
+.circle-rating {
+    border-radius: 10rem;
+    color: #DDDCDD;
+    height: 1.7rem;
+    width: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgba(0,0,0,0);
+    border-width: 0.15rem;
+    border-style: solid;
+}
+
+.rating-0 {
+    border-width: 0.15rem !important;
+    border-style: solid !important;
+    border-color: white !important;
+}
+
+.rating-1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #353A4B;
+}
+
+.rating-2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #5563AA;
+}
+
+.rating-3 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #7184E7;
+}
+
+.rating-4 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #C788E6;
+}
+
+.rating-5 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #F7678A;
+}
+
+.font-small {
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

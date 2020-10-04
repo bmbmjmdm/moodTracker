@@ -1,0 +1,157 @@
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import "bootstrap/scss/mixins/_breakpoints.scss";
+
+@include media-breakpoint-only(xs) {
+    .card-form {
+        width: 90%;
+    }
+}
+@include media-breakpoint-only(sm) {
+    .card-form {
+        width: 80%;
+    }
+}
+@include media-breakpoint-only(md) {
+    .card-form {
+        width: 70%;
+    }
+}
+@include media-breakpoint-only(lg) {
+    .card-form {
+        width: 60%;
+    }
+}
+@include media-breakpoint-only(xl) {
+    .card-form {
+        width: 50%;
+    }
+}
+.card-form {
+    border-radius: 1.3rem;
+    background-color: white;
+    height: 90%;
+}
+
+.card-form-header {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 30%;
+}
+
+@include media-breakpoint-only(md) {
+    .card-form-header {
+        height: 32%;
+    }
+}
+
+.card-form-body {
+    height: 54%;
+}
+
+@include media-breakpoint-only(md) {
+    .card-form-body {
+        height: 52%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .card-form-body {
+        height: 50%;
+    }
+}
+
+.card-form-footer {
+    height: 17%;
+}
+
+@include media-breakpoint-down(sm) {
+    .card-form-footer {
+        height: 21%;
+    }
+}
+
+.large-text {
+    font-size: 1.3rem
+}
+
+@include media-breakpoint-down(sm) {
+    .large-text {
+        font-size: 1rem
+    }
+}
+
+.hide-styling {
+    resize: none;
+    border: none;
+}
+
+.circle-button {
+    border-radius: 10rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #DDDCDD;
+    color: #DDDCDD;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@include media-breakpoint-down(sm) {
+    .circle-button {
+        font-size: 1.3rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.background-5 {
+    background-color: #F7678A;
+    color: white !important;
+    border-width: 0rem !important;
+}
+
+.background-4 {
+    background-color: #C788E6;
+    color: white !important;
+    border-width: 0rem !important;
+}
+
+.background-3 {
+    background-color: #7184E7;
+    color: white !important;
+    border-width: 0rem !important;
+}
+
+.background-2 {
+    background-color: #5563AA;
+    color: white !important;
+    border-width: 0rem !important;
+}
+
+.background-1 {
+    background-color: #353A4B;
+    color: white !important;
+    border-width: 0rem !important;
+}
+
+.outline-button {
+    border-radius: 0.6rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #F76789;
+    color: #F76789;
+    height: 3rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

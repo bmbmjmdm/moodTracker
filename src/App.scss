@@ -1,0 +1,69 @@
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import "bootstrap/scss/mixins/_breakpoints.scss";
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.gradient-5 {
+  background-image: linear-gradient(#F57694, #FFD28F);
+}
+
+.gradient-4 {
+  background-image: linear-gradient(#9984D5, #E688A4);
+}
+
+.gradient-3 {
+  background-image: linear-gradient(#7184E7, #8896C9);
+}
+
+.gradient-2 {
+  background-image: linear-gradient(#5563A9, #242B4C);
+}
+
+.gradient-1 {
+  background-image: linear-gradient(#35394A, #1F202D);
+}
+
+.gradient-0 {
+  background-image: linear-gradient(#B0B4BA, #CCC4C4, #C6BCBE, #9AA4AC);
+}
+
+.title-segment {
+  height: 6%;
+  font-size: 1.5rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .title-segment {
+    height: 4%;
+    font-size: 1rem;
+  }
+}
+
+.card-segment {
+  height: 66.5%;
+}
+
+@include media-breakpoint-down(sm) {
+  .card-segment {
+    height: 63%;
+  }
+}
+
+.list-segment {
+  height: 20%;
+}
+
+@include media-breakpoint-down(sm) {
+  .list-segment {
+    height: 27.5%;
+  }
+}
+
+.month-segment {
+  height: 6.5%;
+  background-color: rgba(0, 0, 0, 0.08)
+}
