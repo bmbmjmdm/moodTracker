@@ -30,7 +30,12 @@ function get12HourTime (date) {
         hours = hours % 12
         mid = 'pm'
     }
-    return `${hours}:${date.getMinutes()}${mid}`
+    // make sure we have 2 minute digits
+    let minutes = date.getMinutes()
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
+    return `${hours}:${minutes}${mid}`
 }
 
 // We dont care about year, so only compare date and month

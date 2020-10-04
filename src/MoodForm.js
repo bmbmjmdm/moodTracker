@@ -20,7 +20,7 @@ export default class MoodForm extends React.PureComponent {
   // Note this is called on every keystroke which is a performance hit, TODO abstract out
   // And access value through ref
   updateMoodDesc (event) {
-    this.props.updateMood({...this.props.mood, description: event.target.value})
+    this.props.updateMood({...this.props.mood, description: event.target.value, savedDate: new Date()})
   }
 
   render () {
